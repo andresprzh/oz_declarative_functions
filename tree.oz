@@ -24,7 +24,7 @@ fun {GetElementsInOrder Tree}
       local I L R in
          case T of nil then nil
          [] tree(info:I left:L right:R) then
-            I|{Append {GetTree L} {GetTree R}}
+            I|{Append {GetList L} {GetList R}}
          end
       end
    end
